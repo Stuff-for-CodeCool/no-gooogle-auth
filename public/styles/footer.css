@@ -1,0 +1,10 @@
+/* https://css-tricks.com/a-clever-sticky-footer-technique/ */
+html,
+body {
+    height: 100%;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}

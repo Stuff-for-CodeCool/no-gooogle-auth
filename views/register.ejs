@@ -1,0 +1,20 @@
+<%- include("./blocks/header.ejs") -%>
+
+<hgroup>
+    <h1>Register an account</h1>
+    <h3 class="error"></h3>
+</hgroup>
+<form action="/users/register" method="post">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required="required">
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required="required">
+    
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required="required">
+
+    <button type="submit">Submit</button>
+</form>
+
+<%- include("./blocks/footer.ejs") -%>

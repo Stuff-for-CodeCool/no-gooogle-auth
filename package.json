@@ -1,0 +1,18 @@
+{
+    "scripts": {
+        "setup": "node data/setup.js",
+        "start": "nodemon server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "ejs": "^3.1.8",
+        "express": "^4.18.2",
+        "mongodb": "^4.12.1",
+        "mongoose": "^6.7.5"
+    },
+    "type": "module",
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
+}

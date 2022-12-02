@@ -1,0 +1,17 @@
+<%- include("./blocks/header.ejs") -%>
+
+<hgroup>
+    <h1>Edit account account</h1>
+    <h3 class="error"></h3>
+</hgroup>
+<form action="/users/id/<%- user._id %>" method="put">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required="required" value="<%- user.name %>">
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required="required" value="<%- user.email %>">
+
+    <button type="submit">Submit</button>
+</form>
+
+<%- include("./blocks/footer.ejs") -%>

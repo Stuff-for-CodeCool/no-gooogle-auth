@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Picocss is great -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+        <!-- But the theme looks better in dark mode -->
+        <!-- Note the / below -->
+        <link rel="stylesheet" href="/styles/theme.css" />
+        <!-- Simplest sticky footer ever -->
+        <link rel="stylesheet" href="/styles/footer.css" />
+        <script src="/scripts/script.js" defer="defer"></script>
+        <title>Sample no-google authentication</title>
+    </head>
+    <body>
+        <nav class="container">
+            <ul>
+                <li><a href="/users">See all users</a></li>
+                <li><a href="/users/register">Register a new user</a></li>
+                <li><a href="/users/login">Log in</a></li>
+            </ul>
+        </nav>
+        <main class="container">
